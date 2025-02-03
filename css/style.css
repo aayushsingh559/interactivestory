@@ -177,7 +177,7 @@ button:hover {
 }
 
 /* display 3 */
-@media (min-width: 768px) {
+@media (min-width: 100%) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
