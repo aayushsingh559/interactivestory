@@ -10,8 +10,6 @@ User can chose options and continue interacting. Any time click `stop` to go bac
 ## Demo:
 Website: https://aaryansingh2009.github.io/interactivestory-website/
 
-## test
-
 ## Code Base:
 We used a variety of languages such as HTML, CSS, and JavaScript. The most common language is HTML which formats each page. With the help of Bootstrap CSS , the web page is formatted with minimal CSS. However, if the output isn't good, we overwrote the CSS.
 
