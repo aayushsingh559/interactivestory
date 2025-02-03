@@ -8,7 +8,7 @@ This website is an interactive story allowing interaction with users. There are 
 User can chose options and continue interacting. Any time click `stop` to go back to main story.
 
 ## Demo:
-Visit website: https://aaryansingh2009.github.io/interactivestory-website/
+Visit website: https://aayushsingh559.github.io/interactivestory/
 
 ## Code Base:
 We used a variety of languages such as HTML, CSS, and JavaScript. The most common language is HTML which formats each page. With the help of Bootstrap CSS , the web page is formatted with minimal CSS. However, if the output isn't good, we overwrote the CSS.
