@@ -1,34 +1,19 @@
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
+@media screen and (min-width:576px) {
+    .carousel-inner {
+        display: flex;
     }
-    .carousel-inner .carousel-item > div:first-child {
+
+    .carousel-item {
         display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3)
     }
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
+.carousel-inner {
+    padding: 1em;
 }
 
-/* display 3 */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
-    }
+.card {
+    margin: 0 .5em;
 }
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
-}
-

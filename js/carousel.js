@@ -1,22 +1,19 @@
-$('#recipeCarousel').carousel({
-    interval: 10000
-  })
-  
-  $('.carousel .carousel-item').each(function(){
-      var minPerSlide = 3;
-      var next = $(this).next();
-      if (!next.length) {
-      next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      
-      for (var i=0;i<minPerSlide;i++) {
-          next=next.next();
-          if (!next.length) {
-              next = $(this).siblings(':first');
-            }
-          
-          next.children(':first-child').clone().appendTo($(this));
-        }
-  });
-  
+var carouselWidth = $('.carousel-inner')[0].scrollWidth;
+var cardWidth = $('.carousel-item').width();
+
+var scrollPosition = 0;
+
+$('.carousel-control-next').on('click', function() {
+  if (scrollPosition < (carouselWidth - (cardWidth * 4))) {
+    scrollPosition = scrollPosition + cardWidth;
+    $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);  
+  }
+});
+
+$('.carousel-control-prev').on('click', function() {
+  if (scrollPosition > 0) {
+    scrollPosition = scrollPosition - cardWidth;
+    $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);  
+  }
+});
+
