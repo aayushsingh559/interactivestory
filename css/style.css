@@ -29,7 +29,7 @@ footer {
 .bgimage {
     width:100%;
     height:550px;
-    background: url("../images/heroimg.png");
+    /* background: url("../images/heroimg.png"); */
     /* background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -39,7 +39,7 @@ footer {
 .bgimage2 {
     width:100%;
     height:550px;
-    background: url("../images/heroimg2.png");
+    /* background: url("../images/heroimg2.png"); */
     /* background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
