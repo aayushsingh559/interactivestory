@@ -169,3 +169,35 @@ button:hover {
         width: 50%;
     }
 }
+
+.carousel-item {
+    position: relative;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Aligns the text to the left, with some padding from the left edge */
+    transform: translateY(-50%); /* Keep the text vertically centered */
+    color: white;
+    text-align: left; /* Aligns the text to the left */
+    padding: 20px; /* Adds some padding around the text */
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
+
+  img {
+      width: 100%;
+      height: 550px;
+  }
