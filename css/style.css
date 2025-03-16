@@ -171,33 +171,31 @@ button:hover {
 }
 
 .carousel-item {
-    position: relative;
-  }
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
 
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
+.carousel-item img {
+    width: auto;
+    max-height: 550px;
+    overflow: hidden;    /* Hide any overflow content */
+    object-fit: cover;   /* Cover the entire area */
+}
 
-  .carousel-caption {
+.carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 10%; /* Aligns the text to the left, with some padding from the left edge */
+    right: 53%; 
     transform: translateY(-50%); /* Keep the text vertically centered */
     color: white;
     text-align: left; /* Aligns the text to the left */
-    padding: 20px; /* Adds some padding around the text */
-  }
+    padding: 20px; /* Adds some padding around the text */;
+}
 
-  .carousel-caption h1 {
-    font-size: 3rem;
-  }
+.carousel-caption h1 {
+    font-size: 4rem;
+}
 
-  .carousel-caption p {
-    font-size: 1.25rem;
-  }
-
-  img {
-      width: 100%;
-      height: 550px;
-  }
+.carousel-caption p {
+    font-size: 1.5rem;
+}
